@@ -1,0 +1,55 @@
+
+html { 
+  height: 100%; 
+  background: blue;;  
+  color: #FFF; 
+}
+body {
+  font-family: 'melodrame', serif, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  min-height:100%;
+}
+
+button {
+  font-family: 'melodrame', serif, sans-serif;
+  font-size: 2em;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: blue;
+  border-radius: 100%;
+  border-color: transparent;
+}
+
+.loading {
+  font-family: 'melodrame', serif, sans-serif;
+  text-shadow: 0px 0px 10px  rgba(0,0,0,.3);
+  justify-content: center;
+}
+
+#loading {
+  margin: 80px;
+}
+   
+p {
+  font-size: 5em;
+}
+
+p2 {
+  font-size: 4em;
+}
+
+
+@font-face {
+  font-family: "melodrame";
+  src: url(./../Relationship\ of\ mélodrame.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-size: large;
+}
