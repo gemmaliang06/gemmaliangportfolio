@@ -1,7 +1,12 @@
 
+
 html { 
   height: 100%; 
-  background: blue;;  
+  background: 
+  linear-gradient(217deg, rgb(165, 233, 255), rgba(173, 216, 230, 0) 70.71%),
+  linear-gradient(127deg, rgba(0, 149, 255, 0.8), rgba(135, 206, 235, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 60, 255, 0.8), rgba(70, 130, 180, 0) 70.71%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70.71%);  
   color: #FFF; 
 }
 body {
@@ -22,7 +27,7 @@ button {
   top: 0;
   left: 0;
   color: white;
-  background-color: blue;
+  background-color: transparent;
   border-radius: 100%;
   border-color: transparent;
 }

@@ -23,7 +23,12 @@ html, body {
   --scrollbar-width: 0px;
   font-family: "melodrame";
   text-decoration: none;
-  background-color: rgb(233, 245, 255);
+  background: 
+  linear-gradient(217deg, rgba(173, 216, 230, 0.8), rgba(173, 216, 230, 0) 70.71%),
+  linear-gradient(127deg, rgba(124, 190, 237, 0.8), rgba(135, 206, 235, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 60, 255, 0.8), rgba(70, 130, 180, 0) 70.71%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70.71%);
+
   }
 
 title {
@@ -174,6 +179,7 @@ title {
   padding: 10px 15px;
   flex: 75%;
   right: 0;
+  min-height: 100vh;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */

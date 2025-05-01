@@ -63,38 +63,3 @@ imgElement.src = `/path/to/images/${artworkImage}`;
 document.body.appendChild(imgElement);
 
 
-var artworkInfo = {
-  first: {
-    artwork_img: "love at first sight.jpeg"
-  },
-  second: {
-    firstName: "Sally",
-    lastName: "Omally",
-    pets: ["ButterFly", "Bird"],
-  },
-  third: {
-    firstName: "Tony",
-    lastName: "Pony",
-    pets: ["Dog", "Cat", "Iguana"],
-  },
-  fourth: {
-    firstName: "Tony",
-    lastName: "Pony",
-    pets: ["Dog", "Cat", "Iguana"],
-  },
-  fifth: {
-    firstName: "Tony",
-    lastName: "Pony",
-    pets: ["Dog", "Cat", "Iguana"],
-  },
-  sixth: {
-    firstName: "Tony",
-    lastName: "Pony",
-    pets: ["Dog", "Cat", "Iguana"],
-  },
-  seventh: {
-    firstName: "Tony",
-    lastName: "Pony",
-    pets: ["Dog", "Cat", "Iguana"],
-  },
-};
