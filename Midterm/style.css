@@ -33,36 +33,57 @@ body {
 
 title { display: none; }
 
-.logo {
+.logo  {
   padding: 0.5em;
 }
-.logo img {
+
+.logo img{
   top: 0;
   left: 0;
   padding: 1em;
   max-width: 8em;
 }
 
-/* Logos */
-.logo_1, .logo_2 {
-  position: fixed;
-  transform: rotate(0deg);
-}
-.logo_1 { z-index: 2; }
-.logo_2 { z-index: 1; }
 
-.logo_1:hover {
-  animation: logoRotate 1.5s;
+/* Rotates the logo slightly counterclockwise to create a dynamic and visually appealing effect */
+.logo_1 {
+  position: fixed;
+  z-index: 2;
+  transform: rotate(-20deg);
 }
+
+
+.logo_2 {
+  position: fixed;
+  z-index: 1; 
+  transform: rotate(20deg);
+}
+
+.logo_1,
+  .logo_2 {
+    transform: rotate(0deg); 
+  }
 
 @keyframes logoRotate {
-  from { transform: rotate(-20deg); }
-  to { transform: rotate(340deg); }
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(340deg);
+  }
 }
 
 @keyframes logoRotateCounterClockwise {
-  from { transform: rotate(20deg); }
-  to { transform: rotate(-340deg); }
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(-340deg);
+  }
+}
+
+.logo_1:hover {
+  animation: logoRotate 1.5s  ;
 }
 
 /* Circle Cursor */
@@ -83,7 +104,7 @@ title { display: none; }
 }
 @font-face {
   font-family: "Moderniz";
-  src: url(./fonts/Moderniz.otf) format('truetype');
+  src: url(./fonts/Moderniz.otf) format(truetype);
 }
 
 .row {
@@ -190,10 +211,11 @@ title { display: none; }
   }
 
   .main {
-    margin-left: 25vw;
+    margin-left: 20vw;
     margin-top: 5em;
     margin-right: 2vw;
     padding: 10px 15px;
     width: auto;
+    max-width: 20vw;
   }
 }
