@@ -193,7 +193,7 @@ title {
 
 @font-face {
   font-family: "melodrame";
-  src: url(melodrame.ttf) format('truetype');
+  src: url(./fonts/melodrame.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
   font-size: large;
@@ -201,7 +201,7 @@ title {
 
 @font-face {
   font-family: "Moderniz";
-  src: url(./../Moderniz.otf) format(truetype);
+  src: url(./fonts/Moderniz.otf) format(truetype);
   font-weight: normal;
   font-style: normal;
   font-size: large;
