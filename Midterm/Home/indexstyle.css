@@ -1,56 +1,118 @@
+/* Container styling */
 .welcome {
-    margin-top: 1vw;
-  }
-  
+  margin-top: 1vw;
+  text-align: center; /* Center the text for a more balanced look */
+}
 
+/* Styling for individual lines with animations */
+.line-1, .line-2, .line-3, .line-4, .line-5 {
+  font-family: 'Moderniz';
+  position: relative; 
+  margin-bottom: 30px;
+  transform: translateY(-100%);
+  opacity: 0;
+  line-height: 1.4;
+}
+
+/* Line 1 with larger font and animation */
+.line-1 {
+  font-size: 70px;
+  animation: fadeInUp 1.9s ease-out forwards 0.2s;
+}
+
+/* Line 2 with slightly smaller font */
+.line-2 {
+  font-size: 30px;
+  animation: fadeInUp 2.4s ease-out forwards 1.7s;
+}
+
+/* Line 3 */
+.line-3 {
+  font-size: 30px;
+  animation: fadeInUp 2.9s ease-out forwards 3.7s;
+}
+
+/* Line 4 */
+.line-4 {
+  font-size: 30px;
+  animation: fadeInUp 3.4s ease-out forwards 5.7s;
+}
+
+/* Line 5 */
+.line-5 {
+  font-size: 30px;
+  animation: fadeInUp 4.5s ease-out forwards 7.7s;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Font-face definition for Moderniz font */
+@font-face {
+  font-family: "Moderniz";
+  src: url(../fonts/Moderniz.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-size: large;
+}
+
+/* Mobile Responsiveness: For screens smaller than 768px */
+@media screen and (max-width: 768px) {
   .line-1 {
-    font-size: 70px;
-    animation: fadeInUp 1.9s ease-out forwards 0.2s; /* Add delay as the last parameter */
+    font-size: 50px; /* Adjust font size for smaller screens */
+    animation: fadeInUp 1.5s ease-out forwards 0.2s;
   }
 
   .line-2 {
-    font-size: 30px;
-    animation: fadeInUp 2.4s ease-out forwards 1.7s; /* Add delay of 0.5s */
+    font-size: 25px; /* Adjust font size */
+    animation: fadeInUp 2s ease-out forwards 1.5s;
   }
 
-  .line-3 {
-    animation: fadeInUp 2.9s ease-out forwards 3.7s; /* Add delay of 1s */
-    font-size: 30px;
+  .line-3, .line-4, .line-5 {
+    font-size: 22px; /* Smaller font size for these lines */
+    animation: fadeInUp 2.5s ease-out forwards 3s;
   }
 
-  .line-4 {
-    animation: fadeInUp 3.4s ease-out forwards 5.7s; /* Add delay of 1.5s */
-    font-size: 30px;
+  /* Adjust margins for mobile devices */
+  .welcome {
+    margin-top: 3vw; /* Increase margin-top for better spacing */
+    padding: 0 10px; /* Add some padding to the sides */
   }
 
-  .line-5 {
-    animation: fadeInUp 4.5s ease-out forwards 7.7s; /* Add delay of 1.5s */
-    font-size: 30px;
-  }
-
+  /* Adjust line height for better readability on small screens */
   .line-1, .line-2, .line-3, .line-4, .line-5 {
-    font-family: 'Moderniz';
-    position: relative; /* Important for animation */
-    margin-bottom: 30px;
-    transform: translateY(-100%);
-    opacity: 0;
+    line-height: 1.3;
   }
-  
-  @keyframes fadeInUp {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+}
+
+/* Further adjustments for extra small screens (mobile phones in portrait) */
+@media screen and (max-width: 480px) {
+  .line-1 {
+    font-size: 40px; /* Even smaller font size */
+    animation: fadeInUp 1.3s ease-out forwards 0.1s;
   }
 
-  @font-face {
-    font-family: "Moderniz";
-    src: url(../fonts/Moderniz.otf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-    font-size: large;
+  .line-2 {
+    font-size: 20px;
+    animation: fadeInUp 1.8s ease-out forwards 1.3s;
   }
+
+  .line-3, .line-4, .line-5 {
+    font-size: 18px;
+    animation: fadeInUp 2s ease-out forwards 3.5s;
+  }
+
+  /* Adjust the welcome section */
+  .welcome {
+    margin-top: 4vw; /* Further spacing */
+  }
+}

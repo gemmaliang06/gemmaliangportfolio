@@ -171,6 +171,7 @@ title {
   white-space: nowrap;
   line-height: 1;
   text-shadow: 5px 2px 5px transparent;
+  font-size: 18px;
 }
 
 .sidenav a span:hover {
@@ -201,7 +202,19 @@ title {
   .main {padding-left:10px}
 }
 
+@media screen and (min-width: 769px) {
+  .sidenav {
+    width: 25vw;
+    padding-top: 130px;
+  }
 
+  .main {
+    margin-left: 20em;
+    margin-top: 5em;
+    margin-right: 2vw;
+    padding: 10px 15px;
+  }
+}
 
 @font-face {
   font-family: "melodrame";
