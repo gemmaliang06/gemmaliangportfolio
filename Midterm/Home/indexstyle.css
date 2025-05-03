@@ -96,7 +96,7 @@
 /* Further adjustments for extra small screens (mobile phones in portrait) */
 @media screen and (max-width: 480px) {
   .line-1 {
-    font-size: 40px; /* Even smaller font size */
+    font-size: 25px; /* Even smaller font size */
     animation: fadeInUp 1.3s ease-out forwards 0.1s;
   }
 

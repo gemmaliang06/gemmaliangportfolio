@@ -197,7 +197,7 @@ title {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  .main {padding-left:10px}
+  .main {padding-left:30px}
 }
 
 @media screen and (min-width: 769px) {
@@ -230,11 +230,25 @@ title {
   font-size: large;
 }
 
+
 @media screen and (max-width: 768px) {
+  .sidenav {
+    position: relative; /* Not fixed anymore */
+    width: 100%;
+    padding-top: 20px;
+    z-index: auto; /* Prevent overlapping */
+  }
+
+  .main {
+    margin-top: 1em;
+    padding: 15px;
+  }
+
   .logo img {
-    max-width: 6em; /* Adjust logo size */
+    max-width: 6em;
   }
 }
+
 
 #circle-cursor {
   height: 15px;
