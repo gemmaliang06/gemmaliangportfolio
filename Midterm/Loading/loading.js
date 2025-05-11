@@ -11,7 +11,7 @@ function typeWriter() {
   } else if (i = txt.length) {
     
     setTimeout(function() {
-      window.location.href = "http://127.0.0.1:3000/Midterm/Home/index.html";
+      window.location.href = "https://gemmaliang06.github.io/gemmaliangportfolio/Midterm/Home/index.html";
     }, 1500);
   }
 }
