@@ -12,7 +12,7 @@ function typeWriter() {
     
     setTimeout(function() {
       window.location.href = "https://gemmaliang06.github.io/gemmaliangportfolio/Midterm/Home/index.html";
-    }, 1500);
+    }, 500);
   }
 }
 
